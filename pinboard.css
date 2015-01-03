@@ -1,0 +1,78 @@
+@import url(//fonts.googleapis.com/css?family=Fira+Sans:400,500,700);
+
+
+body {
+	font-family: "Fira Sans", sans-serif;
+  	font-size: 13px;
+  	margin-top: 1.7em;
+}
+
+#timer {
+	font-family: inherit;
+  	font-size: 0.84em;
+}
+
+a.url_display {
+	transition: color 150ms linear;
+}
+
+a.bookmark_title:link, a.url_display:hover, #banner a, #banner a.banner_username {
+	color: rgb(0, 0, 205);
+}
+
+/*a.bookmark_title:visited {
+	color: #610099;
+}*/
+
+.url_link, .private a.url_link {
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+
+.star {
+	margin-left: -28px;
+}
+
+.bookmark {
+	margin: 0;
+    border-color: #eee;
+    border-style: solid;
+	border-bottom-width: 1px;
+	padding: 1.2em 0.6em;
+}
+
+#bookmarks div:first-child .bookmark {
+	border-top-width: 1px;
+}
+
+a.tag:hover {
+	text-decoration: underline;
+}
+
+.bookmark_title {
+	font-weight: 500;
+  	font-size: 1.2em;
+	/* font-weight: bold; */
+}
+
+.private {
+	background: lightyellow;
+	border-width: 0 4px 1px 1px;
+	border-right-color: rgb(232, 215, 35);
+  	border-bottom-color: #eee;
+}
+
+a.unread::after, a.unread:visited::after {
+	color: #b41;
+  	padding-right: 18px;
+	content: " \2666"; /* diamond */
+}
+
+
+blockquote {
+	margin-bottom: 14px;
+}
+
+#bottom_next_prev, #per_page_picker {
+  margin-top: 1.3em
+}
