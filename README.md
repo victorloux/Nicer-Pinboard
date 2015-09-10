@@ -2,17 +2,28 @@
 
 This is an alternative stylesheet for [Pinboard](https://pinboard.in), which gives it a slightly more modern and usable look, while retaining the original simplicity that we all love.
 
-- New font (Fira Sans, but you can set it to any other local font or webfont of your liking — if you own it, I highly recommend [National](https://klim.co.nz/retail-fonts/national/) by Klim Foundry.
+- New font (Source Sans).
 - Larger spacing and subtle separating lines between links, which makes the list much clearer and easier to browse
 - Private links are now in yellow, and to-read links have an indicator
 - Fixes the missing margin under `<blockquote>`s in link descriptions (that’s particularly useful if you use Pinboard Plus, which blockquotes selected text)
-- And a few other spacing enhancements (in the details and tags)
+- A few other spacing and UI enhancements (in the details and tags)
+- auto-adds flags next to language tags, if you save pages in several languages (e.g. `lang:fr`, `lang:de`). *(nb: you might want to comment this out if your browser/computer does not support Emojis.)*
 
 ## Installation
 
 You will need the Stylish plugin, which is available [for Chrome](https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe) and [for Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/?src=external-userstyleshome). It’s like GreaseMonkey, but for CSS. This CSS should however work with similar extensions or methods if you are using another browser.
 
-This will be published on UserStyles.org at some point, but for now you’ll have to install it manually:
+
+### Automatic installation
+
+Install from UserStyles.org: https://userstyles.org/styles/118641/nicer-pinboard
+You will have to edit the CSS once it's set up (click Stylish, then Edit) and add this line first:
+
+```
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600");
+```
+
+### Manual installation
 
 - Navigate to [pinboard.in](https://pinboard.in).
 - Click the Stylish icon in your toolbar, then *Manage installed styles*, then *Write new style*.
@@ -22,10 +33,3 @@ This will be published on UserStyles.org at some point, but for now you’ll hav
 ## Screenshot
 
 ![Screenshot](screenshot.png)
-
-## To do
-
-- Fix some bugs with links colours
-- Make unread links more distinctive
-- Clean up the code
-- Put on userstyles.org for easy installation
